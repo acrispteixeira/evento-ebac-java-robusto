@@ -1,8 +1,18 @@
 ## Evento EBAC - 24/02/25
 # Java com Spring Boot: Criando Aplicações Robustas com Abordagem Prática
 
+### ✔️ Ferramentas e tecnologias utilizadas
+
+- ``Java 17``
+- ``Spring 3.4.3``
+- ``InteliJ IDEA``
+- ``Maven``
+- ``Windows 11 Home``
+
+### 📑 Sobre o projeto
 
 A base do projeto foi realizada com o [start.spring.io](https://start.spring.io/) com as configurações abaixo:
+```
 - Project: Maven
 - Language: Java
 - Spring Boot: 3.4.3
@@ -10,14 +20,16 @@ A base do projeto foi realizada com o [start.spring.io](https://start.spring.io/
 - Packagiing: Jar
 - Java: 17
 - Dependencies: _iniciamos sem nada personalizado, mas pode verificar de já trazer o Spring Batch_
+```
 
 ![image](https://github.com/user-attachments/assets/3d73a78e-964c-4148-87da-5b693a3a08a1)
 
+### 🗂 Estrutura do projeto
 
 O projeto é um exemplo básico de uma solução básica baseada em lote (batch).
 
 Os pacotes do projeto são:
-
+```
 📂 ebac
 ├── 📂 src
 │   ├── 📂 main
@@ -44,6 +56,7 @@ Os pacotes do projeto são:
 │   │   │   ├── 📄 FileProcessingInJavaApplicationTests.java  # Testes unitários (@SpringBootTest)
 ├── 📄 pom.xml  # Arquivo de dependências (Maven)
 ├── 📄 README.md  # Documentação do projeto
+```
 
 Esse exemplo prevê uma situação que simula o processamento de arquivos utilizando o Spring.
 Normalmente, um analista de negócios fornece uma planilha. Para este exemplo simples, criamos um arquivo de CSV para
@@ -59,7 +72,6 @@ Cada registro de _Person_ pode ser instanciado por meio de um construtor.
 
 Depois, precisamos de um processador intermediário.
 Um paradigma comum no processamento em lote (_batch_) é:
-
 1. ingerir dados,
 2. transformá-los e,
 3. em seguida, canalizá-los para outro lugar.
@@ -77,5 +89,6 @@ Por último, mas não menos importante, lembre-se de garantir que o projeto é e
 
 A abordagem mais simples empacota tudo em um único arquivo JAR executável, controlado por um bom e velho método Java main().
 
+⏩ Logo, para executar o projeto, basta executar a classe principal!
 
-Parabéns! Você criou um trabalho em lote que ingeriu dados de uma planilha, processou-os e os gravou num banco de dados.
+## 🚀 Parabéns! Você criou um trabalho em lote que ingeriu dados de uma planilha, processou-os e os gravou num banco de dados.
